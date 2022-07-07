@@ -10,12 +10,12 @@ if ( ! $minore){
     die("Pe cine pula mea minti ma. Bifeaz-o si pe ultima.");
 }
 
-$host = "localhost";
-$dbname = "message_db";
-$username = "root";
-$password = "";
-
-$conn = mysqli_connect($host, $username, $password, $dbname);
+$host = "ec2-54-228-32-29.eu-west-1.compute.amazonaws.com";
+$dbname = "de3rjiei76o2js";
+$username = "vdrbofjdgqobfe";
+$password = "4b7a3371b76d0a99bcd97668af3fcc27850cb0fc924c2a15e86376325103aba3";
+$port="5432";
+$conn = mysqli_connect($host, $username, $password, $dbname, $port);
 
 if(mysqli_connect_errno()){
     die("Connection error: " . mysqli_connect_error());
